@@ -2,7 +2,7 @@ project:
   output-dir: _docs
 
 website:
-  title: "CosmicSelection"
+  title: "cosmic_selection"
   site-url: "https://2catycm.github.io/CosmicSelection"
   description: "天择，基于PyTorch的新一代高性能演化计算框架。CosmicSelection: a new generation of high-performance evolutionary computing framework based on PyTorch."
   repo-branch: main
