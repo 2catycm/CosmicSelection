@@ -4,5 +4,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_baseurl': '/CosmicSelection',
                 'doc_host': 'https://2catycm.github.io',
                 'git_url': 'https://github.com/2catycm/CosmicSelection',
-                'lib_path': 'CosmicSelection'},
-  'syms': {'CosmicSelection.core': {'CosmicSelection.core.foo': ('core.html#foo', 'CosmicSelection/core.py')}}}
+                'lib_path': 'cosmic_selection'},
+  'syms': {'cosmic_selection.core': {'cosmic_selection.core.foo': ('core.html#foo', 'cosmic_selection/core.py')}}}
