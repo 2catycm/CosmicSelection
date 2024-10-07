@@ -9,7 +9,7 @@ __all__ = ['IntegerBenchmarkFunction', 'LargestSum']
 import torch
 import torch.nn as nn
 import warnings
-from Scientist_Experiment_Optimization.objectives.benchmark_funs import BenchmarkFunction
+from .benchmark_funs import BenchmarkFunction
 
 class IntegerBenchmarkFunction(BenchmarkFunction):
     def __init__(self):

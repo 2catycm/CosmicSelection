@@ -8,8 +8,8 @@ __all__ = ['lib_init_path', 'lib_repo_path', 'runs_path', 'runs_figs_path', 'lib
 # %% ../nbs/utils.ipynb 3
 from pathlib import Path
 import inspect
-import Scientist_Experiment_Optimization
-lib_init_path = Path(inspect.getfile(Scientist_Experiment_Optimization))
+import cosmic_selection
+lib_init_path = Path(inspect.getfile(cosmic_selection))
 lib_init_path
 lib_repo_path = lib_init_path.parent.parent
 lib_repo_path

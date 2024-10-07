@@ -11,8 +11,8 @@ from pathlib import Path
 from matplotlib.font_manager import FontProperties
 import torch.nn as nn
 import torch
-from Scientist_Experiment_Optimization.objectives import integer_funs
-from Scientist_Experiment_Optimization.algorithms import concepts as abstract_algorithms
+from ..objectives import integer_funs
+from . import concepts as abstract_algorithms
 from scipy.stats import mannwhitneyu
 from matplotlib import pyplot as plt
 
@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 # plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 # plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 # plt.rcParams['axes.facecolor']='black'
-from Scientist_Experiment_Optimization.utils import *
+from ..utils import *
 
 font = FontProperties(fname=lib_directory_path/""/"fonts/SimHei.ttf")
 
@@ -28,7 +28,7 @@ _current_time = lambda : f"_{datetime.now().strftime('%Y-%m-%d-%H-%M')}"
 
 
 # %% ../../nbs/algorithms/scientist_experiment.ipynb 6
-from Scientist_Experiment_Optimization.utils import *
+from ..utils import *
 class StudentExperiment(abstract_algorithms.EvolvingAlgorithm):
     """学生实验算法，用于控制变量做实验。"""
     def __init__(self, problem:integer_funs.IntegerBenchmarkFunction, k_round:int=5, experiment_times:int=5,

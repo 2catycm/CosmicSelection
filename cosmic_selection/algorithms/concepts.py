@@ -10,7 +10,7 @@ from typing import Tuple, Union
 import torch
 import torch.nn as nn
 import warnings
-from Scientist_Experiment_Optimization.objectives import benchmark_funs
+from ..objectives import benchmark_funs
 
 # 演化算法
 class EvolvingAlgorithm(nn.Module):
